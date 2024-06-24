@@ -126,6 +126,32 @@ dependencies {
     ksp(libs.retrofit.squareup.moshi.codegen)
 
 
+    /****
+     * Testing
+     ****/
+
+    implementation (libs.core)
+    testImplementation (libs.junit)
+    testImplementation (libs.androidx.core.testing)
+    testImplementation (libs.kotlinx.coroutines.test)
+    testImplementation (libs.google.truth)
+    testImplementation (libs.mockito.mockito.core)
+    implementation(libs.androidx.junit)
+
+    androidTestImplementation (libs.junit)
+    androidTestImplementation (libs.dexmaker.mockito)
+    androidTestImplementation (libs.jetbrains.kotlinx.coroutines.test.v160)
+    androidTestImplementation (libs.core.testing)
+    androidTestImplementation (libs.google.truth)
+    androidTestImplementation (libs.androidx.junit)
+    androidTestImplementation (libs.androidx.espresso.core)
+    androidTestImplementation (libs.mockito.mockito.core)
+    androidTestImplementation (libs.hilt.android.testing)
+    kaptAndroidTest (libs.hilt.android.compiler)
+    debugImplementation (libs.androidx.fragment.testing)
+    androidTestImplementation(libs.androidx.navigation.testing)
+
+
 }
 
 
